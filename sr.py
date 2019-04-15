@@ -22,7 +22,7 @@ def command():
 
     try:
         task = r.recognize_google(audio).lower()
-        print(" you say: " + task)
+        print("You said: " + task)
     except sr.UnknownValueError:
         talk(" i don't understand you ")
         task = command()
